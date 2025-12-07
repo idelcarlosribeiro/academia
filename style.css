@@ -644,7 +644,7 @@ button:hover{
     position: absolute;
 }
 .container-form-fo{
-    margin: 10%;
+    margin-left: 5%;
     grid-area: 2 / 1 / 6 / 6;
 }
 
@@ -660,7 +660,7 @@ button:hover{
 .form-mensage h4{
     font-family: "Kanit", sans-serif;
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3vmax;
     margin-bottom: 3%;
 }
 .form-mensage label{
@@ -698,10 +698,11 @@ form{
     'telefone assunto'
     'mensagem mensagem'
     ;
-    height: 100%;
+    width: 80%;
+    height: 70%;
 }
 .email input{
-    width: 18vw;
+    width: 100%;
 }
 .nome{
     grid-area: nome;
@@ -719,8 +720,8 @@ form{
     grid-area: mensagem;
 }
 .mensagem input{
-    width: 52%;
-    height: 80px;
+    width: 60%;
+    height: 90px;
 }
 .form-mensage button{
     min-width: 100px;
@@ -735,7 +736,8 @@ form{
 
 
 /*responsive*/
-@media screen and (max-width: 1023px){
+/*tablet*/
+@media screen and (max-width: 1024px){
     h3{
         font-size: 3vw;
         font-weight: bold;
@@ -834,6 +836,76 @@ form{
     }
     /*fim diaria*/
 
-    
+    /*form*/
+    .form .texto-form h2{
+    font-size: 3vw;
+    }
+    .form .texto-form h3{
+        font-size: 2.5vw;
+    }
+    .texto-form .cotainersvg-form {
+    width: 35%;
+    }
+
+    .form-mensage h4{
+    font-size: 2em;
+    }
+    .form-mensage label{
+    font-size: 1em;
+    }
+
+    .form-mensage button{
+    min-width: 150px;
+    min-height: 40px;
+}
+    /*Fim form*/
+}
+
+
+/*celular*/
+@media screen and (max-width: 767px) {
+    /*Promoção*/
+    .texto-promocao h2 {
+    font-size: 6vw;
+    }
+    .texto-promocao .buttom-branco{
+        width: 30vw;
+        height: 10vw;
+        font-size: .8em;
+    }
+    .container-promocao{
+        flex-direction: column;
+    }
+    .texto-promocao{
+        height: 100%;
+    }
+    /*Fim promoção*/
+
+    /*form*/
+    .form .texto-form h2{
+    font-size: 4vw;
+    }
+    .form .texto-form h3{
+        font-size: 3.5vw;
+    }
+    .texto-form .cotainersvg-form {
+    width: 50%;
+    }
+    .form-mensage h4{
+    font-size: 2.8vw;
+    }
+    form{
+    display: grid;
+    grid-template-areas: 
+    'nome'
+    'emal'
+    'telefone'
+    'assunto'
+    'mensagem'
+    ;
+    row-gap: 2%;
+    width: 80%;
+
+}
     /*Fim form*/
 }
