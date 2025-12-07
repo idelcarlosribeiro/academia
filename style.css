@@ -864,6 +864,12 @@ form{
 
 /*celular*/
 @media screen and (max-width: 767px) {
+    /*header*/
+    .header .img-banner{
+    height: 15%;
+}
+    /*fim header*/
+
     /*Promoção*/
     .texto-promocao h2 {
     font-size: 6vw;
@@ -894,6 +900,12 @@ form{
     .form-mensage h4{
     font-size: 2.8vw;
     }
+    .form-mensage label{
+    font-size: .8em;
+    }
+    .form-mensage input{
+    min-height: 40px;
+    }
     form{
     display: grid;
     grid-template-areas: 
@@ -905,7 +917,10 @@ form{
     ;
     row-gap: 2%;
     width: 80%;
-
-}
+    }
+    .mensagem input{
+    width: 100%;
+    height: 70px;
+    }
     /*Fim form*/
 }
