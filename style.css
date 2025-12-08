@@ -66,7 +66,7 @@ body{
 button{
     width: 10vw;
     height: 3vw;
-    border-radius: 30px;
+    border-radius: 15px;
     border: none;
     background-color: #00F82D;
     z-index: 11;
@@ -416,6 +416,7 @@ button:hover{
 }
 .texto-promocao .buttom-branco{
     height: 4vw;
+    width: 13vw;
     background-color: aliceblue;
     font-weight: bold;
     color: black;
@@ -512,6 +513,14 @@ button:hover{
 .container-texto-plano h4{
     font-family: "Kanit", sans-serif;
 }
+.container-card-planos .c1{
+    background: linear-gradient(316deg,rgba(1, 202, 38, 1) 5%, rgb(0, 75, 15) 100%);
+}
+.container-card-planos .c1 button{
+    background-color: #eee;
+    color: #232323;
+}
+
 .texto-pequeno-cards{
     font-size: .5em;
     font-family: "Kanit", sans-serif;
@@ -529,7 +538,6 @@ button:hover{
     list-style-type: none;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    margin-bottom: 10%;
 }
 .card1 li:nth-child(3), 
 .card1 li:nth-child(4){
@@ -543,25 +551,29 @@ button:hover{
 .container-icon-card{
     display: flex;
     flex-direction: column;
-    gap: 7%;
+    align-items: center;
+    justify-content: center;
+    gap: 12%;
     height: 100%;
 }
+
+
 .icon-list-card{
-    width: 30px;
-    height: 30px;
-    background-image: url(img/icons8-verificado-50\ 4.svg);
-    background-position: center;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .texto-recomend-planos{
     position: absolute;
-    right: -30px;
-    top: 20px;
+    right: -26px;
+    top: 15px;
     transform: rotate(40deg);
     font-family: "Poppins", sans-serif;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-decoration-color: #008919;
+    text-decoration-color: #00ff26;
     animation: pulsar 1s alternate infinite;
 }
 @keyframes pulsar {
@@ -570,6 +582,8 @@ button:hover{
     }
 }
 .cards-planos button{
+    font-weight: bold;
+    margin-top: 10%;
     border-radius: 10px;
 }
 
@@ -731,6 +745,7 @@ form{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 1em;
+    margin-top: 5%;
 }
 
 
@@ -880,8 +895,14 @@ form{
     /*fim header*/
 
     /*Promoção*/
+    .texto-promocao{
+        margin-top: 5%;
+    }
+    .texto-promocao p{
+        font-size: 1em;
+    }
     .texto-promocao h2 {
-    font-size: 6vw;
+    font-size: 7vw;
     }
     .texto-promocao .buttom-branco{
         width: 30vw;
@@ -907,10 +928,10 @@ form{
     width: 50%;
     }
     .form-mensage h4{
-    font-size: 2.8vw;
+    font-size: 3vw;
     }
     .form-mensage label{
-    font-size: .8em;
+    font-size: .7em;
     }
     .form-mensage input{
     min-height: 40px;
